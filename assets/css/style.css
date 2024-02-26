@@ -37,8 +37,8 @@ Header*/
 header{
     font-family: Roboto-Bold;
     height: 100%;
-    width: 180px;
-    max-width: 180px;
+    width: 10%;
+    max-width: 10%;
     background-color: #181818;
     position: fixed;
 }
@@ -59,7 +59,7 @@ header{
     justify-content: center;
     position: relative;
 }
-span{
+header span{
     color: #FC2054;
     left: 1cm;
     position: absolute;
@@ -68,19 +68,50 @@ span{
     font-size: 30px;
     margin-top: -25px;
 }
-nav ul li{
-    width: 100%;
-    height: 150px;
-    padding: 10px;
-    border: 1px solid red;
-}
-nav ul a li{
-    border: 1px solid blue;
+nav{
+    margin-top: 5px;
 }
 nav a{
-    display: flex;
-    flex-direction: column;
     height: 50px;
     padding: 10px;
-    border: 1px solid red;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+hr{
+    margin: 5px 0px 5px 0px;
+    opacity: 0.5;
+    color: #3b3b3b;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+}
+.redes i{
+    font-size: 20px;
+}
+/************
+Main*/
+main{
+    margin-left: 10%;
+    height: 100%;
+    width: 90%;
+    position: absolute;
+}
+/**********
+bqnner*/
+.banner{
+    height: 100%;
+    font-family: Roboto-Bold;
+    display: flex;
+    align-items: center;
+}
+.nome-frase{
+    color: #04FCD8;
+}
+.nome-frase-tras{
+    position: absolute;
+    color: #FC2054;
+    margin-left: 3px;
 }

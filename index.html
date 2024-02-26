@@ -22,10 +22,9 @@
     <script src="assets/js/githubAPI.js"></script>
 </head>
 <body>
-    <header>
-        <a name="topo"/>
+    <header aria-label="Cabeçario do site">
         <div class="inicio">
-            <a href="#topo">
+            <a href="#topo" aria-label="Ir para o Inicio">
                 <div>
                     <p class="titulo"><span>M</span>M</p>
                     <p class="nome">Matheus</p>
@@ -33,27 +32,49 @@
                 </div>
             </a>
         </div>
-        <nav>
-            <a href="#sobre">
+        <nav aria-label="Menu Principal">
+            <hr>
+            <a href="#sobre" aria-label="Sobre mim">
                 Sobre
             </a>
-            <a href="#Skils">
+            <hr>
+            <a href="#Skils" aria-label="Minhas Skils">
                 Minhas Skils
             </a>
-            <a href="#trabalho">
+            <hr>
+            <a href="#trabalho" aria-label="Meus trabalhos"> 
                 Trabalhos
             </a>
-            <a href="#contato">
+            <hr>
+            <a href="#contato" aria-label="Contato">
                 Contato
             </a>
-            <a href="#ver">
+            <hr>
+            <a href="#ver" aria-label="Ver">
                 ver
             </a>
-            <div>
-                redes
+            <hr>
+            <div class="redes" aria-label="Redes Sociais">
+                <a href="https://github.com/111Yokoo" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-label="GitHub"></i></a>
+                <a href="https://www.linkedin.com/in/matheus-dozono-yokoo-800519297/" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/japa.yokoo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </nav>
     </header>
-    
+    <main aria-label="Conteúdo principal da página">
+        <a name="topo"/>
+        <section class="banner">
+            <article>
+                <p> &lt;/html&gt;</p>
+                <p>&lt;body&gt;</p>
+                <p>&lt;h1&gt;</p>
+                <h1>E aí! <br><span class="nome-frase"><span class="nome-frase-tras">M</span>M</span>atheus aqui, <br>desenvolvedor web em busca de desafios estimulantes.<span>&lt;h1&gt;</span></h1>
+                <p>&lt;p&gt;</p>
+                <p>Full Stack Developer</p>
+                <p>&lt;/p&gt;</p>
+            </article>
+        </section>
+
+    </main>
 </body>
 </html>
