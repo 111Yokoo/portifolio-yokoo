@@ -111,13 +111,13 @@ main{
     margin-left: 10%;
     height: 100%;
     width: 90%;
-    padding: 30px;
     position: absolute;
 }
 /**********
 banner*/
 .banner{
     height: 100%;
+    padding: 30px;
     font-family: Roboto-Bold;
     display: flex;
     flex-direction: column;
@@ -166,4 +166,11 @@ banner*/
     border: 1px solid #181818;
     color: #181818;
     text-align: center;
+}
+/*************
+Sobre*/
+.sobre{
+    background-color: #181818;
+    width: 100%;
+
 }
