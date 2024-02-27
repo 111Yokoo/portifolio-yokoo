@@ -13,6 +13,20 @@ fontes*/
     font-family: Roboto-Italic;
     src: url(../fonts/Roboto-Italic.ttf);
 }
+/************
+Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 5px; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #04FCD8; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FC2054; 
+}
 /******
 Geral*/
 *{
@@ -97,16 +111,18 @@ main{
     margin-left: 10%;
     height: 100%;
     width: 90%;
+    padding: 30px;
     position: absolute;
 }
 /**********
-bqnner*/
+banner*/
 .banner{
     height: 100%;
-    padding: 50px;
+
     font-family: Roboto-Bold;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .bannerTitulo{
     font-size: 72px;
@@ -135,4 +151,11 @@ bqnner*/
 }
 .fundoElementosSpace2{
     padding-left: 50px;
+}
+.downloadCurriculo{
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #0DD0B4;
+    color: #0DD0B4;
+    text-align: center;
 }
