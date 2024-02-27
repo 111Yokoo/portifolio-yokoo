@@ -118,7 +118,6 @@ main{
 banner*/
 .banner{
     height: 100%;
-
     font-family: Roboto-Bold;
     display: flex;
     flex-direction: column;
@@ -155,7 +154,16 @@ banner*/
 .downloadCurriculo{
     width: 200px;
     padding: 15px;
+    margin-left: 50px;
     border: 1px solid #0DD0B4;
+    border-radius: 5px;
     color: #0DD0B4;
+    text-align: center;
+    transition: 0.5s;
+}
+.downloadCurriculo:hover{
+    background-color: #0DD0B4;
+    border: 1px solid #181818;
+    color: #181818;
     text-align: center;
 }
