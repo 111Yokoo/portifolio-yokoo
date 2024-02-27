@@ -103,9 +103,19 @@ main{
 bqnner*/
 .banner{
     height: 100%;
+    padding: 50px;
     font-family: Roboto-Bold;
     display: flex;
     align-items: center;
+}
+.bannerTitulo{
+    font-size: 72px;
+    padding-left: 70px;
+}
+.bannerSubTitulo{
+    font-size: 21px;
+    padding-left: 50px;
+    opacity: .5;
 }
 .nome-frase{
     color: #04FCD8;
@@ -114,4 +124,15 @@ bqnner*/
     position: absolute;
     color: #FC2054;
     margin-left: 3px;
+}
+.fundoElementos{
+    font-size: 17px;
+    font-family: Roboto-Italic;
+    opacity: .1;
+}
+.fundoElementosSpace1{
+    padding-left: 30px;
+}
+.fundoElementosSpace2{
+    padding-left: 50px;
 }
