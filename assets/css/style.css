@@ -38,6 +38,7 @@ body{
     font-family: Roboto-Regular;
     background-color: #1D1D1D;
     color: #f2f2f2;
+    
 }
 a{
     color: #f2f2f2;
@@ -65,7 +66,7 @@ header{
     justify-content: center;
     justify-items: center;
 }
-.titulo{
+.titulo-m{
     font-size: 80px;
     margin-top: 10px;
     color: #04FCD8;
@@ -196,72 +197,62 @@ Sobre*/
     filter: grayscale(100%);
     border-radius: 15px;
 }
+/************
+Skils*/
+.skils{
+    padding: 50px 100px 50px 100px;
+}
+.titulo{
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.skill-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.skill-card{
+    width: 500px;
+     height: 150px;
+    padding: 10px;
+    border: 1px solid #04FCD8;
+    border-radius: 10px;
+}
+/*************
+trabalhos*/
+.trabalhos{
+    background-color: #181818;
+    width: 100%;
+    padding: 50px 100px 50px 100px;
+}
 
 /********
 footer*/
 footer {
     margin-top: 100px;
     width: 100%;
-    height: 300px;
+    height: 50px;
     background-color: #181818;
-    color: #000;
-    font-family: Geizer; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-    footer .button {
-      width: 60px;
-      height: 60px;
-      cursor: pointer;
-      color: #181818;
-      background: #000;
-      overflow: hidden;
-      border-radius: 50px;
-      transition: all 0.3s ease-in-out;
-      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); 
-    }
-    footer .button span {
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 60px;
-      margin-left: 10px;
-    }
-    footer .button:hover {
-      width: 200px; }
-    footer .button:nth-child(1):hover .icon {
-      background: #e1306c; }
-    footer .button:nth-child(2):hover .icon {
-      background: #4267b2; }
-    footer .button:nth-child(3):hover .icon {
-      background: #1da1f2; }
-    footer .button:nth-child(1) span {
-      color: #e1306c; }
-    footer .button:nth-child(2) span {
-      color: #4267b2; }
-    footer .button:nth-child(3) span {
-      color: #1da1f2; }
-    footer .button .icon {
-      width: 60px;
-      height: 60px;
-      text-align: center;
-      border-radius: 50%;
-      display: inline-block;
-      margin-left: -1px;
-      overflow-y: hidden;
-      transition: all 0.3s ease-in-out; }
-    footer .button .icon i {
-      font-size: 25px;
-      line-height: 60px;
-      transition: all 0.3s ease-in-out; }
-    footer .button:hover i {
-      color: #fff; }
-    footer footer:has(p) {
-      padding: 3px;
-      display: block;
-      text-align: center; }
-    footer p:first-child a {
-      color: #b30000;
-      text-decoration: underline; }
-    footer footer a:hover {
-      color: #fafaff; }
-    footer .clear {
-      clear: both; }
-  
+
+/*desktop*/
+@media (min-width: 992px) and (max-width: 1280) {
+    
+}
+/*tablet*/
+@media (min-width: 768px) and (max-width: 992px) {
+    
+}
+/*mobile*/
+@media (min-width: 481px) and (max-width: 767px) {
+    
+}
