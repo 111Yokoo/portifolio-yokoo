@@ -196,6 +196,12 @@ Sobre*/
 .sobreImagem{
     filter: grayscale(100%);
     border-radius: 15px;
+    height: 500px;
+    overflow-y: hidden;
+}
+.sobreTextP{
+    font-size: 18px;
+    text-align: justify;
 }
 /************
 Skils*/
@@ -218,11 +224,18 @@ Skils*/
     justify-content: center;
 }
 .skill-card{
-    width: 500px;
-     height: 150px;
+    width: 400px;
+    height: 150px;
     padding: 10px;
     border: 1px solid #04FCD8;
     border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.skill-card i{
+    font-size: 28px;
 }
 /*************
 trabalhos*/
