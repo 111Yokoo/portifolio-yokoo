@@ -216,14 +216,24 @@ Skils*/
     justify-content: center;
     position: relative;
 }
-.skill-container{
+
+/*************
+trabalhos*/
+.trabalhos{
+    background-color: #181818;
+    width: 100%;
+    padding: 50px 100px 50px 100px;
+}
+/*************
+Formações*/
+.formacoes-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
 }
-.skill-card{
+.formacoes-card{
     width: 400px;
     height: 150px;
     padding: 10px;
@@ -234,15 +244,8 @@ Skils*/
     align-items: center;
     justify-content: center;
 }
-.skill-card i{
+.formacoes-card i{
     font-size: 28px;
-}
-/*************
-trabalhos*/
-.trabalhos{
-    background-color: #181818;
-    width: 100%;
-    padding: 50px 100px 50px 100px;
 }
 
 /********
