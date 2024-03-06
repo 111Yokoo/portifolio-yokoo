@@ -212,20 +212,56 @@ Skils*/
     font-size: 26px;
     margin-top: 10px;
     margin-bottom: 50px;
+    font-family: Roboto-Bold;
     display: flex;
     justify-content: center;
     position: relative;
 }
-
+.skill-container{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px;
+    justify-content: center;
+}
+.skill-container i{
+    font-size: 40px;
+    color: #04FCD8;
+    display: flex;
+    transition: .1s;
+}
+.skill-container i:hover{
+    cursor: pointer;
+    color: #FC2054;
+}
+.skill-card{
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-container span{
+    display: none;
+    font-family: Roboto-Italic;
+}
+.skill-card i:hover + span{
+    display: block;
+    color: #FC2054;
+}
 /*************
-trabalhos*/
-.trabalhos{
+Contato*/
+.contato{
     background-color: #181818;
     width: 100%;
     padding: 50px 100px 50px 100px;
 }
 /*************
 Formações*/
+.formacoes{
+    width: 100%;
+    padding: 50px 100px 50px 100px;
+}
 .formacoes-container{
     display: flex;
     flex-direction: row;
@@ -247,7 +283,6 @@ Formações*/
 .formacoes-card i{
     font-size: 28px;
 }
-
 /********
 footer*/
 footer {
