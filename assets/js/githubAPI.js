@@ -1,23 +1,20 @@
-// Substitua 'SEU_NOME_DE_USUÁRIO' pelo seu nome de usuário do GitHub
-const username = '111Yokoo';
+$(document).ready(function() {
+  const username = '111Yokoo';
+  const apiUrl = `https://api.github.com/users/${username}/repos`;
 
-// URL da API para obter os repositórios de um usuário específico
-const apiUrl = `https://api.github.com/users/${username}/repos`;
-
-// Realiza uma requisição GET para a API do GitHub
-fetch(apiUrl)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Erro ao obter os repositórios');
-    }
-    return response.json();
-  })
-  .then(repositories => {
-    console.log('Meus Repositórios no GitHub:');
-    repositories.forEach(repo => {
-      console.log(repo);
+  $.get(apiUrl)
+    .done(function(repositories) {
+      repositories.forEach(function(repo) {
+        if (repo.html_url.includes('churrascaria')) {
+          const repoLink = $('<a>').attr('href', repo.html_url).text("Clique para ver o repositório").attr('target', '_blank');
+          $('#churrascaria').append(repoLink, $('<br>'));
+        } else if (repo.html_url.includes('calendario_alimentacao')) {
+          const repoLink = $('<a>').attr('href', repo.html_url).text("Clique para ver o repositório").attr('target', '_blank');
+          $('#calendario_alimentacao').append(repoLink, $('<br>'));
+        }
+      });
+    })
+    .fail(function(error) {
+      console.error('Ocorreu um erro:', error);
     });
-  })
-  .catch(error => {
-    console.error('Ocorreu um erro:', error);
-  });
+});

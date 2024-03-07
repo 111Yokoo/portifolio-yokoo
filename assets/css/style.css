@@ -218,7 +218,7 @@ Skils*/
     position: relative;
 }
 .skill-container{
-    height: 200px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -250,11 +250,32 @@ Skils*/
     color: #FC2054;
 }
 /*************
-Contato*/
-.contato{
-    background-color: #181818;
+Projetos*/
+.projetos{
     width: 100%;
-    padding: 50px 100px 50px 100px;
+    background-color: #181818;
+    padding-bottom: 100px;
+}
+.projetos-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.projetos aside{
+    max-width: 500px;
+    text-align: center;
+    font-size: 22px;
+}
+.projetos img{
+    width: 500px;
+}
+.projetos aside div a{ 
+    color: #04FCD8;
+    text-decoration: underline;
+}
+.projetos aside div a:hover{ 
+    color: #FC2054;
 }
 /*************
 Formações*/
