@@ -24,15 +24,15 @@
 <body>
     <header aria-label="Cabeçario do site">
         <div class="inicio">
-            <a href="#topo" aria-label="Ir para o Inicio">
-                <div>
-                    <p class="titulo-m"><span>M</span>M</p>
-                    <p class="nome">Matheus</p>
-                    <p>Web Developer</p>
+            <a class="inicioTitle" href="#topo" aria-label="Ir para o Inicio">
+                <p class="titulo-m"><span>M</span>M</p>
+                <div class="desktop">
+                    <p class="nome ">Matheus</p>
+                    <p class="">Web Developer</p>
                 </div>
             </a>
         </div>
-        <nav aria-label="Menu Principal">
+        <nav class="desktopTablet" aria-label="Menu Principal">
             <hr>
             <a href="#sobre" aria-label="Sobre mim">
                 Sobre
@@ -56,6 +56,11 @@
                 <a href="https://www.instagram.com/japa.yokoo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </nav>
+        <nav class="mobile">
+            <button>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
     </header>
     <main aria-label="Conteúdo principal da página">
         <a name="topo"></a>
@@ -73,7 +78,7 @@
         <section class="sobre" aria-label="Seção sobre o desenvolvedor">
             <article class="sobreText">
                 <h2>Matheus Dozono Yokoo</h2>
-                    <hr>
+                    <hr class="linhaSobre">
                 <p class="sobreTextP">Sou um desenvolvedor web full stack, com formação técnica em análise e desenvolvimento de sistemas. Dominar diversas linguagens de programação, frameworks e ferramentas é minha especialidade. Com conhecimento em HTML, CSS e JavaScript, posso criar interfaces de usuário atrativas e responsivas. Além disso, minha experiência em linguagens de back-end como PHP me permite desenvolver sistemas escaláveis que atendem às necessidades dos usuários.</p>
                 <p class="sobreTextP">Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades. Sou um solucionador de problemas criativo e colaborativo, capaz de trabalhar tanto de forma independente quanto em equipe para enfrentar desafios complexos e entregar resultados de alta qualidade.</p>
             </article>

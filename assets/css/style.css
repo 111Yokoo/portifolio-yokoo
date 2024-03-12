@@ -64,6 +64,9 @@ header{
     justify-content: center;
     justify-items: center;
 }
+.desktop{
+    display: block;
+}
 .titulo-m{
     font-size: 80px;
     margin-top: 10px;
@@ -83,6 +86,9 @@ header span{
 }
 nav{
     margin-top: 5px;
+}
+nav.mobile{
+    display: none;
 }
 nav a{
     height: 50px;
@@ -195,7 +201,7 @@ Sobre*/
     filter: grayscale(100%);
     border-radius: 15px;
     height: 500px;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 .sobreTextP{
     font-size: 18px;
@@ -221,6 +227,7 @@ Skils*/
     flex-direction: row;
     flex-wrap: wrap;
     gap: 70px;
+    margin: 20px;
     justify-content: center;
 }
 .skill-container i{
@@ -316,7 +323,7 @@ footer {
 }
 
 /*desktop*/
-@media (min-width: 1100px) and (max-width: 1280px) {
+@media (max-width: 1280px) {
     header{
         width: 12%;
     }
@@ -324,13 +331,119 @@ footer {
         width: 88%;
         margin-left: 12%;
     }
-    
+    .sobreImagem{
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .sobreImagem img{
+        background-size: cover;
+    }
+    .skill-container{
+        margin-bottom: 20px;
+    }
+    .formacoes-card{
+        width: 300px;
+        height: 200px;
+    }
 }
 /*tablet*/
-@media (min-width: 768px) and (max-width: 1198px) {
-    
+@media (max-width: 1098px) {
+    header{
+        width: 100%;
+        max-width: 100%;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+    }
+    .inicio{
+        width: 20%;
+        height: 70px;
+        font-size: 20px;
+    }
+    .inicioTitle{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .desktop{
+        display: none;
+    }
+    .titulo-m{
+        font-size: 55px;
+        margin-top: 0px;
+    }
+    header span{
+        left: 5px;
+    }
+    nav{
+        width: 80%;
+        margin-top: 0px;
+        gap: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    nav a{
+        width: auto;
+        height: 50px;
+    }
+    nav div{
+        display: flex;
+    }
+    hr{
+        display: none;
+    }
+    hr.linhaSobre{
+        display: block;
+    }
+    main{
+        margin-left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+    .banner{
+        margin-bottom: 10px;
+    }
+    .sobreText{
+        width: 900px;
+    }
+    .sobreImagem{
+        display: none;
+    }
 }
 /*mobile*/
-@media (min-width: 481px) and (max-width: 767px) {
-    
+@media (max-width: 767px) {
+    .inicio{
+        width: 85%;
+        background-color: #181818;
+    }
+    nav.desktopTablet{
+        display: none;
+    }
+    nav.mobile{
+        display: block;
+        width: 15%;
+    }
+    nav a{
+        width: auto;
+        height: 50px;
+    }
+    nav div{
+        display: flex;
+    }
+    hr{
+        display: none;
+    }
+    hr.linhaSobre{
+        display: block;
+    }
+    main{
+        margin-left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
 }
