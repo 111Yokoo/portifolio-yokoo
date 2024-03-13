@@ -9,15 +9,15 @@ Este portfólio foi desenvolvido para apresentar meu perfil profissional, destac
 Se você encontrar algum problema ou tiver sugestões de melhorias para o meu portfólio, sinta-se à vontade para abrir uma issue ou enviar um pull request. Sua contribuição é muito bem-vinda!
 
 ### Como Executar Localmente
-Clone este repositório:
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+Clone este repositório: <br/>
+git clone https://github.com/seu-usuario/nome-do-repositorio.git <br/>
 Abra o arquivo index.html em seu navegador da web.
 
 ### Como Executar Pelo Navegador
 Acesse o link: https://111yokoo.github.io/portifolio-yokoo/
 
 ### Contato
-Email: yokoomatheus@gmail.com
+Email: yokoomatheus@gmail.com <br/>
 LinkedIn: <a href="https://www.linkedin.com/in/matheus-dozono-yokoo-800519297/"> Matheus Dozono Yokoo </a>
 
 ##
