@@ -1,4 +1,3 @@
-
 /*******
 fontes*/
 @font-face {
@@ -211,6 +210,7 @@ Sobre*/
 Skils*/
 .skils{
     padding: 50px 100px 50px 100px;
+    width: 100%;
 }
 .titulo{
     font-size: 26px;
@@ -340,7 +340,7 @@ footer {
         background-size: cover;
     }
     .skill-container{
-        margin-bottom: 20px;
+        height: 120px;
     }
     .formacoes-card{
         width: 300px;
@@ -427,23 +427,61 @@ footer {
         display: block;
         width: 15%;
     }
-    nav a{
-        width: auto;
-        height: 50px;
+    nav.mobile button{
+        width: 100%;
+        height: 100%;
+        background: none;
+        border: none;
+        color: #fff;
     }
-    nav div{
-        display: flex;
-    }
-    hr{
-        display: none;
-    }
-    hr.linhaSobre{
-        display: block;
+    nav.mobile button i{
+        font-size: 40px;
     }
     main{
-        margin-left: 0px;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
+        margin-top: 5px;
+    }
+    .banner p{
+        font-size: 15px;
+    }
+    .banner h1{
+        font-size: 50px;
+    }
+    .skill-container{
+        height: 220px;
+    }
+    .projetos aside{
+        max-width: 400px;
+        text-align: center;
+        font-size: 22px;
+    }
+    .projetos img{
+        width: 400px;
+    }
+}
+@media (max-width: 450px) {
+    main{
+        margin-top: 0px;
+    }
+    .banner p{
+        font-size: 15px;
+    }
+    .banner h1{
+        font-size: 45px;
+    }
+    .skill-container{
+        height: 550px;
+    }
+    .projetos aside{
+        max-width: 350px;
+        text-align: center;
+        font-size: 22px;
+    }
+    .projetos img{
+        width: 350px;
+    }
+    .formacoes-card{
+        width: 600px;
+        height: 220px;
+        padding: 0;
     }
 }
