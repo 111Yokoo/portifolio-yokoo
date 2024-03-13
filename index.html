@@ -20,19 +20,51 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!--JS-->
     <script src="assets/js/githubAPI.js"></script>
+    <script src="assets/js/js.js"></script>
 </head>
 <body>
     <header aria-label="Cabeçario do site">
-        <div class="inicio">
-            <a class="inicioTitle" href="#topo" aria-label="Ir para o Inicio">
-                <p class="titulo-m"><span>M</span>M</p>
-                <div class="desktop">
-                    <p class="nome ">Matheus</p>
-                    <p class="">Web Developer</p>
+            <div class="inicio">
+                <a class="inicioTitle" href="#topo" aria-label="Ir para o Inicio">
+                    <p class="titulo-m"><span>M</span>M</p>
+                    <div class="desktop">
+                        <p class="nome ">Matheus</p>
+                        <p class="">Web Developer</p>
+                    </div>
+                </a>
+            </div>
+            <nav class="desktopTablet" aria-label="Menu Principal">
+                <hr>
+                <a href="#sobre" aria-label="Sobre mim">
+                    Sobre
+                </a>
+                <hr>
+                <a href="#Skils" aria-label="Skils">
+                    Skils
+                </a>
+                <hr>
+                <a href="#Projetos" aria-label="Projetos">
+                    Projetos
+                </a>
+                <hr>
+                <a href="#formacoes" aria-label="Ver">
+                    Formações
+                </a>
+                <hr>
+                <div class="redes" aria-label="Redes Sociais">
+                    <a href="https://github.com/111Yokoo" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-label="GitHub"></i></a>
+                    <a href="https://www.linkedin.com/in/matheus-dozono-yokoo-800519297/" target="_blank" rel="noopener noreferrer" aria-label="linkedin"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/japa.yokoo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-            </a>
-        </div>
-        <nav class="desktopTablet" aria-label="Menu Principal">
+            </nav>
+            <nav class="mobile">
+                <button onclick="abrirNav()" id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+    </header>
+    <main aria-label="Conteúdo principal da página">
+        <nav class="navBarMobile" id="navBarMobile" aria-label="Menu Principal" style="display: none;">
             <hr>
             <a href="#sobre" aria-label="Sobre mim">
                 Sobre
@@ -56,13 +88,6 @@
                 <a href="https://www.instagram.com/japa.yokoo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </nav>
-        <nav class="mobile">
-            <button>
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
-    </header>
-    <main aria-label="Conteúdo principal da página">
         <a name="topo"></a>
         <section class="banner" aria-label="Banner de apresentação">
                 <p class="fundoElementos"> &lt;/html&gt;</p>

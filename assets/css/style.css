@@ -321,7 +321,6 @@ footer {
     align-items: center;
     justify-content: center;
 }
-
 /*desktop*/
 @media (max-width: 1280px) {
     header{
@@ -411,18 +410,34 @@ footer {
         justify-content: center;
     }
     .sobreText{
-        width: 900px;
+        width: 100%;
+    }
+    .sobreText hr{
+        width: 80%;
     }
     .sobreImagem{
         display: none;
     }
-    
 }
 /*mobile*/
 @media (max-width: 767px) {
     .inicio{
         width: 85%;
         background-color: #181818;
+    }
+    .navBarMobile{
+        background-color: #181818;
+        position: fixed;
+        width: 200px;
+        height: 100%;
+        z-index: 1;
+    }
+    .navBarMobile a{
+        margin: 20px 0px 20px 0px;
+        font-size: 21px;
+    }
+    hr{
+        display: block;
     }
     nav.desktopTablet{
         display: none;
@@ -505,58 +520,21 @@ footer {
     }
     .sobreTextP{
         font-size: 15px;
-    }
+    } 
 }
 @media (max-width: 370px) {
     .banner p{
         font-size: 12px;
     }
     .banner h1{
-        font-size: 33px;
-    }
-    .sobreTextP{
-        font-size: 12px;
-    }
-    .titulo h2{
-        font-size: 18px;
-    }
-}
-@media (max-width: 290px) {
-    .titulo-m{
-        font-size: 45px;
-        margin-top: 0px;
-    }
-    nav.mobile button i{
-        font-size: 25px;
-    }
-    .banner p{
-        font-size: 10px;
-    }
-    .banner h1{
-        font-size: 25px;
+        font-size: 28px;
     }
     .downloadCurriculo{
         width: 100px;
         font-size: 10px;
     }
-    .sobreTextP{
-        font-size: 10px;
-        width: 100%;
-    }
-    .sobreText hr{
-        width: 80%;
-    }
-    .sobreText h2{
-        font-size: 15px;
-    }
     .titulo h2{
-        font-size: 15px;
-    }
-    .skill-container{
-        gap: 20px;
-    }
-    .skill-container i{
-        font-size: 20px;
+        font-size: 18px;
     }
     .projetos aside{
         max-width: 200px;
@@ -579,5 +557,36 @@ footer {
     }
     footer{
         font-size: 10px;
+    }
+}
+@media (max-width: 290px) {
+    .titulo-m{
+        font-size: 45px;
+        margin-top: 0px;
+    }
+    nav.mobile button i{
+        font-size: 25px;
+    }
+    .banner p{
+        font-size: 10px;
+    }
+    .banner h1{
+        font-size: 25px;
+    }
+    .sobreTextP{
+        font-size: 10px;
+        
+    }
+    .sobreText h2{
+        font-size: 15px;
+    }
+    .titulo h2{
+        font-size: 15px;
+    }
+    .skill-container{
+        gap: 20px;
+    }
+    .skill-container i{
+        font-size: 20px;
     }
 }

@@ -1,7 +1,6 @@
 $(document).ready(function() {
   const username = '111Yokoo';
   const apiUrl = `https://api.github.com/users/${username}/repos`;
-
   $.get(apiUrl)
     .done(function(repositories) {
       repositories.forEach(function(repo) {
